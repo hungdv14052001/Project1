@@ -12,20 +12,20 @@ Chủ đề: Web bán hàng đồ gỗ nội thất (bàn ghế, tủ thờ, gi�
 -Phía quản lý: + Đăng nhập, quản lý sản phẩm, ...
 
 -Phía khách hàng:
-  Đăng nhập
+  +Đăng nhập
   
-  Xem sản phẩm
+  +Xem sản phẩm
   
-  Tìm kiếm sản phẩm
+  +Tìm kiếm sản phẩm
   
-  Xem chi tiết
+  +Xem chi tiết
   
-  Thêm sản phẩm vào giỏ hàng
+  +Thêm sản phẩm vào giỏ hàng
   
-  Comment và đánh giá sản phẩm
+  +Comment và đánh giá sản phẩm
   
-  Chat với nhân viên hỗ trợ
+  +Chat với nhân viên hỗ trợ
   
-  Quản lý giỏ hàng
+  +Quản lý giỏ hàng
   
-  Đặt Hàng
+  +Đặt Hàng
