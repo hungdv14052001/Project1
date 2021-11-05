@@ -1,0 +1,229 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainWeb.master.cs" Inherits="Web_Ban_Hang_Do_Go.MainWeb" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Đồ gỗ Văn Hùng</title>
+    <link rel='shortcut icon' href='./img/MainLogo.png' />
+    <link href="css/Main.css" rel="stylesheet" />
+    <link href="fonts/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet" />
+    <link href="css/RPS.css" rel="stylesheet" />
+    <link href="css/SanPhamCss.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="Header">
+            <div class="h-title">   
+                <div class="t-content">
+                    <p class="t-content-item">Kết nối:</p>
+                    <a href="https://www.facebook.com/hung.dang.0321" class="t-content-item">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hung.dang.0321/" class="t-content-item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <p class="t-content-item">Hotline: 0123456789</p>
+                </div>
+
+                <div class="t-content">
+                    <%if ((Boolean)Session["member"] == false)
+                        {
+                        %>
+                    <a href="#" onclick="showLoginModal()" class="t-content-item js-login">Đăng Nhập</a>
+                    <a href="Register.aspx" class="t-content-item">Đăng Ký</a>
+                    <%}
+                       else
+                        { %>
+                    <asp:Button ID="Button2" runat="server" Text="Đăng Xuất" CssClass="t-content-item" OnClick="DangXuat"/>
+                    <%} %>
+
+                </div>
+            </div>
+            <div class="h-main">
+                <div class="h-listmain">
+                    <div class="h-main-item1" style="display: flex;">
+                        <a href="HomePage.aspx" class="MainLogo">
+                            <img src="./img/MainLogo.png" width="100"; height="100" />
+                        </a>
+                        <div class="logo-content">
+                            <h2 style="margin: 0;">ĐỒ GỖ VĂN HÙNG</h2>
+                            <h4 style="margin: 0;">Mang Sắc Thái Cho Ngôi Nhà Bạn</h4>
+                        </div>
+                    </div>
+
+                    <div class="h-main-item2" style="display: flex; justify-content: space-around;">
+                        <input name="txtSearch" runat="server" id="txtSearch" type="text" class="txt-Search" form="form1" placeholder="Nhập từ khoá muốn tìm kiếm"/>
+                        <a class="btn-Search" href="#">
+                            <i class="fas fa-search" style="font-size: 1.3rem; margin-top: 5px; color: black;"></i>
+                        </a>
+                    </div>
+
+                    <div  class="h-main-item3" style="display: flex; justify-content: space-around;">
+                        <a onclick="showGioHangModal()" class="cart">
+                            <i class="fas fa-shopping-cart" style="color: #ecd7d7;font-size: 1.3rem; margin-top: 7px;"></i>
+                            <p class="content-cart" style="font-size: 1rem; font-weight: 600; margin-top: 10px;">Giỏ Hàng</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="Menu">
+            <ul class="Menu-list">
+                <li class="Menu-item"><a href="HomePage.aspx">TRANG CHỦ</a></li>
+                <li class="Menu-item Cha-DM">
+                    <a href="#">SẢN PHẨM</a>
+                    <div class="DM">
+                        <ul class="DM-list">
+                            <li class="DM-item"><a href="SanPham.aspx?ID=PK">NỘI THẤT PHÒNG KHÁCH</a></li>
+                            <li class="DM-item"><a href="SanPham.aspx?ID=PN">NỘI THẤT PHÒNG NGỦ</a></li>
+                            <li class="DM-item"><a href="SanPham.aspx?ID=PB">NỘI THẤT PHÒNG BẾP</a></li>
+                            <li class="DM-item"><a href="SanPham.aspx?ID=PT">NỘI THẤT PHÒNG THỜ</a></li>
+                            <li class="DM-item"><a href="SanPham.aspx?ID=OT">CÁC LOẠI ĐỒ GỖ KHÁC</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="Menu-item"><a href="#">LIÊN HỆ</a></li>
+                <li class="Menu-item"><a href="#">GIỚI THIỆU</a></li>
+            </ul>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="Footer">
+            <div class="f-dk">
+                <input Class="f-dk-txt" type="text" placeholder="Đăng ký để nhận thông tin"/>
+                <asp:Button CssClass="f-dk-btn" ID="Button5" runat="server" Text="Đăng ký" OnClick="Button5_Click" />
+            </div>
+            <div class="ttlh">
+                <div class="company">
+                    <h3>CÔNG TY</h3>
+                    <br/>
+                    <h4>CÔNG TY SX ĐỒ GỖ NỘI Thất VĂN HÙNG</h4>
+                    <p>ĐỊA CHỈ : Số 1 ABC, phường Trương Định, quận Hai Bà Trưng, thành phố Hà Nội</p>
+                    <p>SĐT LIÊN HỆ: 0123456789</p>
+                    <p>EMAIL: VanHung@NoiThat.vn</p>
+                </div>
+                <div class="system">
+                    <h3>HỆ THUỐNG CỬA HÀNG</h3>
+                    <ul>
+                        <li>Trần Khát Trân</li>
+                        <li>Đại La</li>
+                        <li>Nguyễn Trãi</li>
+                        <li>Nguyễn Du</li>
+                        <li>Lê Duẩn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-contairner">
+                <div onclick="HiddenLoginModal()" class="modal-close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <header class="modal-header">
+                    <label style="margin-top: 32px;">
+                        <i class="fas fa-sign-in-alt" style="padding: 0 5px;"></i>LOGIN
+                    </label>
+                    
+                    
+                </header>
+
+                <div class="modal-body">
+                    <label for="" class="modal-lable">
+                        <i class="fas fa-user-circle"></i>
+                        ACCOUNT
+                    </label>
+                    <input name="txtAcc" runat="server" id="txtAcc" class="modal-input" type="text" placeholder="E-mail or NumberPhone" />
+                    <label for="" class="modal-lable">
+                        <i class="fas fa-key"></i>  
+                        PASSWORD
+                    </label>
+                    <input name="txtPass" runat="server" id="txtPass" type="password" Class="modal-input" placeholder="Password" form="form1"/>
+                    <asp:Button ID="Button1" UseSubmitBehavior="false" runat="server" Text="LOGIN" CssClass="modal-but" OnClick="Button1_Click" AccessKey="T"/>
+                </div>
+                <div class="modal-footer">
+                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                </div>
+            </div>
+        </div>
+        <div class="GioHangModal">
+            <div class="GioHang-Contairner">
+                <div  class="GioHang-Close">
+                    <i onclick="HiddenGioHangModal()" class="fas fa-times" style="margin-right: 4px; cursor: pointer;"></i>
+                </div>
+                <header class="GioHang-Header">
+                    <p style="margin: 0; padding: 0;">Giỏ Hàng</p>
+                </header>
+                <div style="display: flex; justify-content: center;">
+                    <div style="border-bottom: 4px solid #ccc; width: 50px; height: 20px;"></div>
+                </div>
+                <div class="GioHang-Body">
+                    <asp:DataList ID="DLGioHang" runat="server">
+                        <ItemTemplate>
+                            <div class="ChiTietGH">
+                                <div class="hinhanh-GH">
+                                    <img src="<%# Eval("AnhMH") %>" style="width: 60px; height: 60px;"/>
+                                </div>
+                                <div class="ChiTiet-GH">
+                                    <a href="Detialsp.aspx?ID=<%# Eval("MaSP")%>" style="text-decoration: none; margin: 5px 0 0 5px; font-size: 20px; color: red;">
+                                        <%# Eval("TenSP") %>-<%# Eval("MaSP") %>
+
+                                    </a>
+                                    <p style="margin: 5px 0 0 5px; color: #ccc;"><%# Eval("SL") %> x <%# Eval("Gia") %> ₫</p>
+                                </div>
+                                <asp:LinkButton ID="btnXoaGH" runat="server" CssClass="Xoa-GH" CommandArgument='<%# Eval("MaH") %>' OnClick="btnXoaGH_Click">
+                                    <i class="fas fa-times" style="cursor: pointer;padding: 2px 4.5px;border: 1px solid black; border-radius: 50%;"></i>
+                                </asp:LinkButton>
+                            </div>
+                        </ItemTemplate>
+                        
+                    </asp:DataList>
+                </div>
+                <div class="thanhtoan-GH">
+                    <div class="thanhtoan-item-GH">
+                        <asp:Label ID="Total" runat="server" CssClass="Total-GH" Text="Tổng Giá: "></asp:Label>
+                    </div>
+                    <div class="thanhtoan-item-GH">
+                        <asp:Button ID="btnDatHang" runat="server" CssClass="btnDH" Text="Đặt Hàng" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const loginBtns = document.querySelectorAll('.js-login')
+            /*Đóng mở modal đăng nhập*/
+            const modal = document.querySelector('.modal')
+            function showLoginModal() {
+                modal.classList.add('open')
+            }
+            function HiddenLoginModal() {
+                modal.classList.remove('open')
+            }
+            /*Đóng mở modal Giỏ Hàng*/
+            const modalGH = document.querySelector('.GioHangModal')
+            function showGioHangModal() {
+                modalGH.classList.add('open')
+            }
+            function HiddenGioHangModal() {
+                modalGH.classList.remove('open')
+            }
+            function ValidateMail() {
+                alert("Tài khoản hoặc mật khẩu không đúng");
+            }
+            function ThongBaoXoa() {
+                alert("Đã Xoá đơn hàng thành công!");
+            }
+            function TBYeuCauLogin() {
+                alert("Bạn phải đăng nhập trước khi mua hàng");
+            }
+            function TBThemVaoGH() {
+                alert("Thêm vào giỏ hàng thành công");
+            }
+        </script>
+    </form>
+</body>
+</html>

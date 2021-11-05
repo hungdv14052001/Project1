@@ -1,0 +1,8 @@
+﻿@media screen and (max-width: 1000px) {
+    .logo-content{
+        display: none;
+    }
+    .content-cart {
+        display: none;
+    }
+}

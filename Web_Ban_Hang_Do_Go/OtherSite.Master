@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OtherSite.master.cs" Inherits="Web_Ban_Hang_Do_Go.OtherSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Đồ gỗ Văn Hùng</title>
+    <link rel='shortcut icon' href='./img/MainLogo.png' />
+    <link rel='shortcut icon' href='./img/MainLogo.png' />
+    <link href="css/Other.css" rel="stylesheet" />
+    <link href="fonts/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

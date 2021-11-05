@@ -1,0 +1,169 @@
+﻿.TieuDe-Sp-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lbTieuDe {
+    margin: 8px 0;
+    font-size: 34px;
+    color: black;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sapxep {
+    width: 80%;
+    height: 36px;
+    background: #921C24;
+    display: flex;
+    align-items: center;
+}
+.SP-container{
+    display: flex;
+    justify-content: center;
+}
+.DS-SP {
+    width: 80%;
+    display: flex;
+    
+}
+.Item-SP {
+    margin-left: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 384px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.anhsp {
+    width: 280px;
+    height: 280px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden; /** DÒNG BẮT BUỘC CÓ **/
+        
+}
+.anhsp:hover img{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+/*Detail*/
+.TieuDe-Dt {
+    width: 100%;
+}
+
+.Body-Dt {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.Dt-Item {
+    width: 550px;
+    height: 500px;
+}
+
+.img-spD{
+    width: 480px;
+    height: 480px;
+    border: 1px solid #ccc;
+}
+.lbGiacs{
+    color: red;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.thuoctinh{
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0;
+    display: flex;
+    width: 90%;
+    font-size: 17px;
+}
+.thuoctinh-name{
+    color: #666666;
+    font-weight: 600;
+    width: 130px;
+}
+.thuoctinh-D {
+    color: #666666;
+}
+/*input số lượng*/
+
+.muahang{
+    margin-top: 20px;
+    display: flex;
+}
+.inputsl {
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    border-radius: 2px;
+    width: 80px;
+    border: 1px solid #ccc;
+}
+.btnMuaHang {
+    margin-left: 50px;
+    width: 130px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    height: 40px;
+    background: #ED5721;
+    border: none;
+    border-radius: 2px;
+}
+.btnMuaHang:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.MuaNgay{
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.btnMuaNgay {
+    width: 90%;
+    height: 62px;
+    background: #FA7B12;
+    border-radius: 3px;
+    color: white;
+    
+}
+.btnMuaNgay:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/*Mo Ta San Pham*/
+.motaD{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.motaD-item{
+    width: 80%;
+    height: 200px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.motaD-content{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+}
