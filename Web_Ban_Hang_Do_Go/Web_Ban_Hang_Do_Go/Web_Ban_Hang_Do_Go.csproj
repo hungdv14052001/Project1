@@ -72,6 +72,7 @@
     <Content Include="css\Other.css" />
     <Content Include="css\RPS.css" />
     <Content Include="css\SanPhamCss.css" />
+    <Content Include="DatHang.aspx" />
     <Content Include="Detialsp.aspx" />
     <Content Include="fonts\fontawesome-free-5.15.4-web\attribution.js" />
     <Content Include="fonts\fontawesome-free-5.15.4-web\css\all.css" />
@@ -1729,6 +1730,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatHang.aspx.cs">
+      <DependentUpon>DatHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatHang.aspx.designer.cs">
+      <DependentUpon>DatHang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Detialsp.aspx.cs">
       <DependentUpon>Detialsp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -67,6 +67,11 @@
                 </div>
             </div>
         </div>
+        <script>
+            function TBThemVaoGH() {
+                alert("Thêm vào giỏ hàng thành công");
+            }
+        </script>
     </div>
     
 </asp:Content>

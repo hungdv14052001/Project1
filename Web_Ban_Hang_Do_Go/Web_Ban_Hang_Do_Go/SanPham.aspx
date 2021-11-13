@@ -28,7 +28,6 @@
                         <div class="anhsp">
                             <a href="Detialsp.aspx?ID=<%# Eval("MaSP")%>">
                                 <img  style="width: 280px; height: 280px; transition: all 1s;" src="<%# Eval("AnhMH") %>" />
-
                             </a>
                         </div>
                         <a href="Detialsp.aspx?ID=<%# Eval("MaSP")%>" style="text-decoration: none;">

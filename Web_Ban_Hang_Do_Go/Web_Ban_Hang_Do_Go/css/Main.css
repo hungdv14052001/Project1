@@ -129,8 +129,18 @@
     position: absolute;
     box-shadow: 0 0 5px;
     width: 250px;
+    animation: fadeUp ease 0.5s;
 }
-.DM-list{
+@keyframes fadeUp{
+    from {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.DM-list {
+    animation: fadeUp ease 0.5s;
     padding: 0;
 }
 .Cha-DM:hover .DM{

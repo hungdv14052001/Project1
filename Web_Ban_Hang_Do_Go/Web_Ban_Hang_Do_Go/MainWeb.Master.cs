@@ -70,7 +70,11 @@ namespace Web_Ban_Hang_Do_Go
         {
 
         }
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnDatHang_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DatHang.aspx");
+        }
+        protected void btnDangNhap_Click(object sender, EventArgs e)
         {
             string tk = txtAcc.Value.ToString();
             string mk = txtPass.Value.ToString();
@@ -122,6 +126,7 @@ namespace Web_Ban_Hang_Do_Go
             Session["member"] = false;
             Session["id"] = "";
             loadGH();
+            Total.Text = "Tổng Giá:";
         }
     }
 }

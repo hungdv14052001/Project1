@@ -8,6 +8,7 @@
     <link rel='shortcut icon' href='./img/MainLogo.png' />
     <link rel='shortcut icon' href='./img/MainLogo.png' />
     <link href="css/Other.css" rel="stylesheet" />
+    <link href="css/Main.css" rel="stylesheet" />
     <link href="fonts/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -18,6 +19,11 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+        <script>
+            function RegisterSucess() {
+                alert("Đăng ký Tài Khoản Thàng Công!")
+            }
+        </script>
     </form>
 </body>
 </html>

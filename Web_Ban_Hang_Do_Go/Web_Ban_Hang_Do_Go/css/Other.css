@@ -69,5 +69,62 @@ body {
     display: flex;
     justify-content: center;
 }
-
+/*Đặt Hàng Page*/
+#DatHang-Page {
+    display: flex;
+    justify-content: center;
+}
+.contentDH {
+    width: 500px;
+}
+.body-DH{
+    width: 100%;
+    min-height: 720px;
+}
+.tt-DH{
+    min-height: 200px;
+    border: 1px solid #ccc;
+}
+.tt-GiaoHang {
+    min-height: 410px;
+    border: 1px solid #ccc;
+}
+.input-tt {
+    width: 96%;
+    margin-left: 2%;
+    height: 43px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.chuthich {
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #ECFBF0;
+    padding: 5px 3%;
+}
+.btnDatHang {
+    width: 100%;
+    margin: 20px 0;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #F87F12;
+}
+.back {
+    position: fixed;
+    top: 10px;
+    z-index: 3;
+    left: 200px;
+    color: blue;
+    text-decoration: none;
+}
+.back-icon{
+    margin: 0;
+}
 

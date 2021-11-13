@@ -87,13 +87,13 @@ namespace Web_Ban_Hang_Do_Go
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword txtPass;
 
         /// <summary>
-        /// Button1 control.
+        /// btnDangNhap control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnDangNhap;
 
         /// <summary>
         /// Label1 control.
