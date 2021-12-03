@@ -9,7 +9,7 @@
     <link href="css/Main.css" rel="stylesheet" />
     <link href="fonts/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet" />
     <link href="css/RPS.css" rel="stylesheet" />
-    <link href="css/SanPhamCss.css" rel="stylesheet" />
+    <link href="css/SanPham.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -205,10 +205,10 @@
             /*Đóng mở modal Giỏ Hàng*/
             const modalGH = document.querySelector('.GioHangModal')
             function showGioHangModal() {
-                modalGH.classList.add('open')
+                modalGH.classList.add('open');
             }
             function HiddenGioHangModal() {
-                modalGH.classList.remove('open')
+                modalGH.classList.remove('open');
             }
             function ValidateMail() {
                 alert("Tài khoản hoặc mật khẩu không đúng");

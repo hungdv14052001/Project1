@@ -32,6 +32,21 @@ namespace Web_Ban_Hang_Do_Go
             else
             {
                 more = Session["id"].ToString();
+                comm = conn.CreateCommand();
+                comm.CommandText = "select * from tblThanhVien";
+                ada.SelectCommand = comm;
+                tbl.Clear();
+                ada.Fill(tbl);
+                foreach(DataRow r in tbl.Rows)
+                {
+                    if (more.Equals(r["MaTV"].ToString()))
+                    {
+                        txtTenTV.Value = r["TenTV"].ToString();
+                        txtSDT.Value = r["SDT"].ToString();
+                        txtDiaChi.Value = r["DiaChi"].ToString();
+                        txtEmail.Value = r["Email"].ToString();
+                    }
+                }
             }
 
             comm = conn.CreateCommand();
@@ -58,10 +73,40 @@ namespace Web_Ban_Hang_Do_Go
                 "set TongTien -= " +
                 "(Select tblSanPham.Gia from tblGioHang, tblSanPham, tblChiTietGH where tblSanPham.MaSP = tblChiTietGH.MaSP and tblGioHang.MaGH = tblChiTietGH.MaGH and tblChiTietGH.MaH = " + more + " ) " +
                 "from tblGioHang, tblChiTietGH where tblGioHang.MaGH = tblChiTietGH.MaGH and tblChiTietGH.MaH = " + more + "; " +
-                "delete from tblChiTietGH where tblChiTietGH.MaH = " + more + "; ";
+                "delete from tblChiTietGH where tblChiTietGH.MaH = " + more + ";";
             comm.ExecuteNonQuery();
             Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "ThongBaoXoa()", true);
             loadGH();
+        }
+
+        protected void HTDatHang_Click(object sender, EventArgs e)
+        {
+            string more;
+            if(Session["id"].ToString().Length == 0)
+            {
+                return;
+            }
+            else
+            {
+                more = Session["id"].ToString();
+                comm = conn.CreateCommand();
+                comm.CommandText = "insert into tblDonHang(MaTV, TongTien, TrangThai, GiaHang) values(" +
+                    " " + more + ", (select tblGioHang.TongTien from tblGioHang where MaTV= " + more + "), 'false', 'false' )";
+                comm.ExecuteNonQuery();
+                comm = conn.CreateCommand();
+                comm.CommandText = "select * from tblChiTietGH where MaGH= (select MaGH from tblGioHang where MaTV= " + more + ")";
+                ada.SelectCommand = comm;
+                tbl.Clear();
+                ada.Fill(tbl);
+                foreach(DataRow r in tbl.Rows)
+                {
+                    comm = conn.CreateCommand();
+                    comm.CommandText = "insert into tblChiTietDH(MaDH, MaSP, SL) values((select MaDH from tblDonHang where MaDH= (select max(MaDH) from tblDonHang)), " +
+                        " '"+ r["MaSP"].ToString() +"', 1); " +
+                        "delete from tblChiTietGH where MaH= "+ r["MaH"].ToString();
+                    comm.ExecuteNonQuery();
+                }
+            }
         }
     }
 }

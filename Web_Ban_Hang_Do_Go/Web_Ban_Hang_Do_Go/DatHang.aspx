@@ -13,7 +13,6 @@
             <div class="body-DH">
                 <p style="font-size: 25px; font-weight: 500; margin: 10px 0; padding: 0;">Thông Tin Đơn Hàng</p>
                 <div class="tt-DH">
-                    
                     <asp:DataList ID="DLGioHang" runat="server">
                         <ItemTemplate>
                             <div class="ChiTietGH">
@@ -22,10 +21,7 @@
                                 </div>
                                 <div class="ChiTiet-GH">
                                     <a href="Detialsp.aspx?ID=<%# Eval("MaSP")%>" style="text-decoration: none; margin: 5px 0 0 5px; font-size: 20px; color: red;">
-                                        <%# Eval("TenSP") %>-<%# Eval("MaSP") %>
-
-                                    </a>
-                                    <p style="margin: 5px 0 0 5px; color: #ccc;"><%# Eval("SL") %> x <%# Eval("Gia") %> ₫</p>
+                                        <%# Eval("TenSP") %>-<%# Eval("MaSP") %></a><p style="margin: 5px 0 0 5px; color: #ccc;"><%# Eval("SL") %> x <%# Eval("Gia") %> ₫</p>
                                 </div>
                                 <asp:LinkButton ID="btnXoaGH" runat="server" CssClass="Xoa-GH" CommandArgument='<%# Eval("MaH") %>' OnClick="btnXoaGH_Click">
                                     <i class="fas fa-times" style="cursor: pointer;padding: 2px 4.5px;border: 1px solid black; border-radius: 50%;"></i>
@@ -37,10 +33,10 @@
                 </div>
                 <p style="font-size: 25px; font-weight: 500; margin: 10px 0; padding: 0;">Thông Tin Giao Hàng</p>
                 <div class="tt-GiaoHang">
-                    <input class="input-tt" placeholder="Họ Và Tên"/>
-                    <input class="input-tt" placeholder="Địa Chỉ Giao Hàng"/>
-                    <input class="input-tt" placeholder="Số Điện Thoại Người Nhận"/>
-                    <input class="input-tt" placeholder="Email"/>
+                    <input id="txtTenTV" runat="server" class="input-tt" placeholder="Họ Và Tên"/>
+                    <input id="txtDiaChi" runat="server" class="input-tt" placeholder="Địa Chỉ Giao Hàng"/>
+                    <input id="txtSDT" runat="server" class="input-tt" placeholder="Số Điện Thoại Người Nhận"/>
+                    <input id="txtEmail" runat="server" class="input-tt" placeholder="Email"/>
                     <div class="chuthich">
                         <p>Chi Phí Giao Hàng: </p>
                         <p>- Miễn phí đối với địa chỉ ở nội thành Hà Nội</p>
@@ -48,7 +44,7 @@
                         <p>Các tỉnh thành khác: 100.000đ/đơn hàng</p>
                     </div>
                 </div>
-                <asp:Button ID="HTDatHang" CssClass="btnDatHang" runat="server" Text="Hoàn Thành Đặt Hàng" />
+                <asp:Button ID="HTDatHang" CssClass="btnDatHang" runat="server" Text="Hoàn Thành Đặt Hàng" OnClick="HTDatHang_Click" />
             </div>
         </div>
 

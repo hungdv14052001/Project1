@@ -18,6 +18,8 @@ namespace Web_Ban_Hang_Do_Go
         {
             Session["member"] = false;
             Session["id"] = "";
+            Session["admin"] = false;
+            Session["MaAd"] = "";
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

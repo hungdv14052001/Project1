@@ -71,7 +71,7 @@
     <Content Include="css\Main.css" />
     <Content Include="css\Other.css" />
     <Content Include="css\RPS.css" />
-    <Content Include="css\SanPhamCss.css" />
+    <Content Include="css\SanPham.css" />
     <Content Include="DatHang.aspx" />
     <Content Include="Detialsp.aspx" />
     <Content Include="fonts\fontawesome-free-5.15.4-web\attribution.js" />
@@ -1723,13 +1723,30 @@
     <Content Include="fonts\fontawesome-free-5.15.4-web\webfonts\fa-solid-900.svg" />
     <Content Include="Global.asax" />
     <Content Include="HomePage.aspx" />
+    <Content Include="img\Admin-If.png" />
+    <Content Include="img\employee.png" />
     <Content Include="img\MainLogo.png" />
+    <Content Include="img\Oder.png" />
+    <Content Include="img\product-management.png" />
     <Content Include="img\Slide.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="QLDH.aspx" />
+    <Content Include="QLspPage.aspx" />
+    <Content Include="QLTV.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="SanPham.aspx" />
+    <Content Include="TrangChuAdmin.aspx" />
+    <Content Include="TTAdmin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminSite.Master.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSite.Master.designer.cs">
+      <DependentUpon>AdminSite.Master</DependentUpon>
+    </Compile>
     <Compile Include="DatHang.aspx.cs">
       <DependentUpon>DatHang.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1754,6 +1771,13 @@
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MainWeb.Master.cs">
       <DependentUpon>MainWeb.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1769,6 +1793,27 @@
       <DependentUpon>OtherSite.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDH.aspx.cs">
+      <DependentUpon>QLDH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLDH.aspx.designer.cs">
+      <DependentUpon>QLDH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLspPage.aspx.cs">
+      <DependentUpon>QLspPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLspPage.aspx.designer.cs">
+      <DependentUpon>QLspPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLTV.aspx.cs">
+      <DependentUpon>QLTV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLTV.aspx.designer.cs">
+      <DependentUpon>QLTV.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1782,6 +1827,20 @@
     </Compile>
     <Compile Include="SanPham.aspx.designer.cs">
       <DependentUpon>SanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChuAdmin.aspx.cs">
+      <DependentUpon>TrangChuAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrangChuAdmin.aspx.designer.cs">
+      <DependentUpon>TrangChuAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TTAdmin.aspx.cs">
+      <DependentUpon>TTAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TTAdmin.aspx.designer.cs">
+      <DependentUpon>TTAdmin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -1841,6 +1900,7 @@
     <Content Include="fonts\fontawesome-free-5.15.4-web\webfonts\fa-solid-900.woff" />
     <Content Include="fonts\fontawesome-free-5.15.4-web\webfonts\fa-solid-900.woff2" />
     <Content Include="OtherSite.Master" />
+    <Content Include="AdminSite.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1851,6 +1911,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Class\" />
+    <Folder Include="imgUpload\" />
     <Folder Include="js\" />
   </ItemGroup>
   <PropertyGroup>

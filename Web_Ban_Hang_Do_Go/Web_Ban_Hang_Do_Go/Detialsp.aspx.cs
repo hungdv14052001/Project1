@@ -11,7 +11,7 @@ namespace Web_Ban_Hang_Do_Go
 {
     public partial class Detialsp : System.Web.UI.Page
     {
-
+        static bool GioHang = false;
         string strc = @"Data Source=DESKTOP-FA5AISU\SQLEXPRESS;Initial Catalog=WebBanHangDoGo;Integrated Security=True";
         SqlConnection con;
         SqlCommand com = new SqlCommand();
@@ -22,7 +22,15 @@ namespace Web_Ban_Hang_Do_Go
             con.Open();
             string id = Request.QueryString["ID"].ToString();
             loadData(id);
-            
+            MoGioHang();
+        }
+        public void MoGioHang()
+        {
+            if (GioHang == true)
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "showGioHangModal()", true);
+                GioHang = false;
+            }
         }
         void loadData(string id)
         {
@@ -55,7 +63,7 @@ namespace Web_Ban_Hang_Do_Go
                 com.CommandText = "Insert into tblChiTietGH(MaGH, MaSP, SL) values("+s+", N'"+id+"', 1); " +
                     "update tblGioHang set TongTien += (select tblSanPham.Gia from tblSanPham where tblSanPham.MaSP = N'" + id + "') where MaGH = " + s + "; ";
                 com.ExecuteNonQuery();
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "TBThemVaoGH()", true);
+                GioHang = true;
                 Response.Redirect(Request.RawUrl);
             }
             else

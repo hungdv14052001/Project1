@@ -41,8 +41,7 @@
                 </div>
                 <div class="muahang">
                     <input aria-label="quantity" class="inputsl" max="10" min="1" type="number" value="1">
-                    
-                    <asp:Button ID="btnMuaHang" CssClass="btnMuaHang" runat="server" Text="Mua Hàng" OnClick="btnMuaHang_Click" />
+                    <asp:Button ID="btnMuaHang" CssClass="btnMuaHang" runat="server" Text="Thêm Vào GH" OnClick="btnMuaHang_Click" />
                 </div>
                 <div class="MuaNgay">
                     <div class="btnMuaNgay">
