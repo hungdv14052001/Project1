@@ -22,7 +22,6 @@ namespace Web_Ban_Hang_Do_Go
             KT();
             conn = new SqlConnection(str);
             conn.Open();
-            loadData(1);
         }
         void KT()
         {

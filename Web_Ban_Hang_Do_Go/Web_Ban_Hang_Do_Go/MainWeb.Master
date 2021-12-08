@@ -85,8 +85,8 @@
                         </ul>
                     </div>
                 </li>
-                <li class="Menu-item"><a href="#Footer">LIÊN HỆ</a></li>
-                <li class="Menu-item"><a href="#">GIỚI THIỆU</a></li>
+                <li class="Menu-item"><a href="MessageTV.aspx">LIÊN HỆ</a></li>
+                <li class="Menu-item"><a href="#Footer">GIỚI THIỆU</a></li>
             </ul>
         </nav>
         <div>

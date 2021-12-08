@@ -46,6 +46,11 @@
                     <i class="fas fa-users" style="margin-right: 10px;"></i>
                     QUẢN LÝ THÀNH VIÊN
                 </a>
+                
+                <a href="QLTV.aspx" class="menu-It-Ad">
+                    <i class="fas fa-comment-dots" style="margin-right: 10px;"></i>
+                    TƯ VẤN KHÁC HÀNG
+                </a>
                 <a href="TTAdmin.aspx" class="menu-It-Ad">
                     <i class="fas fa-user" style="margin-right: 10px;"></i>
                     THÔNG TIN ADMIN

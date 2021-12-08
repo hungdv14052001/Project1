@@ -1730,6 +1730,8 @@
     <Content Include="img\product-management.png" />
     <Content Include="img\Slide.jpg" />
     <Content Include="Login.aspx" />
+    <Content Include="MessageTV.aspx" />
+    <Content Include="MesssageAd.aspx" />
     <Content Include="QLDH.aspx" />
     <Content Include="QLspPage.aspx" />
     <Content Include="QLTV.aspx" />
@@ -1784,6 +1786,20 @@
     </Compile>
     <Compile Include="MainWeb.Master.designer.cs">
       <DependentUpon>MainWeb.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MessageTV.aspx.cs">
+      <DependentUpon>MessageTV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageTV.aspx.designer.cs">
+      <DependentUpon>MessageTV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MesssageAd.aspx.cs">
+      <DependentUpon>MesssageAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesssageAd.aspx.designer.cs">
+      <DependentUpon>MesssageAd.aspx</DependentUpon>
     </Compile>
     <Compile Include="OtherSite.Master.cs">
       <DependentUpon>OtherSite.Master</DependentUpon>

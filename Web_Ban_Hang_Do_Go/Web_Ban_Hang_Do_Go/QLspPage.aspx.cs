@@ -35,8 +35,7 @@ namespace Web_Ban_Hang_Do_Go
             }
         }
         public void loadData()
-        {
-           
+        { 
             comm = conn.CreateCommand();
             comm.CommandText = "select * from tblSanPham";
             adp.SelectCommand = comm;

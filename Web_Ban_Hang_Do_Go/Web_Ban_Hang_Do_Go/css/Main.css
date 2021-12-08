@@ -430,3 +430,51 @@ header.modal-header {
     opacity: 0.9;
     cursor: pointer;
 }
+
+/*Message TV*/
+.TieuDe-Mess{
+    display: flex;
+    margin-left: 25%;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.bang {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messageBox {
+    width: 50%;
+    height: 400px;
+    overflow-y: scroll; /* Show vertical scrollbar */
+    background: #ccc;
+}
+.messageBox::-webkit-scrollbar {
+  width: 10px;
+}
+
+.messageBox::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+.messageBox::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+.messageBox::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+.txtMess{
+    width: 62%;
+    height: 32px;
+}
+.btnSend{
+    height: 38px;
+    width: 45px
+}
+/*Message TV*/
