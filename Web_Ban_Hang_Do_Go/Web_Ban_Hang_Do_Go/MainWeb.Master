@@ -219,6 +219,7 @@
             function TBYeuCauLogin() {
                 alert("Bạn phải đăng nhập trước khi mua hàng");
             }
+            /*set crollbar postion */
         </script>
     </form>
 </body>

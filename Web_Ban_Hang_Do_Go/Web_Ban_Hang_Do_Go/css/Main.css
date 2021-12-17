@@ -477,4 +477,53 @@ header.modal-header {
     height: 38px;
     width: 45px
 }
+.True{
+    width: 196%;
+    height: 44px; 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.False {
+    width: 748px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.TrueMess {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color: black;
+    font-family: Comic Sans MS;
+    border-radius: 19px;
+}
+.FalseMess {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    background-color: #0084FF;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color: white;
+    font-family: Comic Sans MS;
+    border-radius: 19px;
+}
+
 /*Message TV*/

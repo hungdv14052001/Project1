@@ -2,12 +2,14 @@
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /*Trang Register*/
-.bg{
+.bg {
     width: 100%;
 }
-.bg-img{
+
+.bg-img {
     width: 100%;
 }
+
 .modal-Resgister {
     z-index: 4;
     position: fixed;
@@ -20,11 +22,13 @@
     justify-content: center;
     display: flex;
 }
-.container-R{
+
+.container-R {
     width: 500px;
     min-height: 500px;
     background: white;
 }
+
 .header-R {
     display: flex;
     justify-content: center;
@@ -32,11 +36,13 @@
     width: 100%;
     height: 90px;
     background: #009688;
-    color: white; 
+    color: white;
 }
-.body-R{
+
+.body-R {
     position: relative;
 }
+
 .modal-R-lable {
     margin-top: 15px;
     margin-left: 1%;
@@ -44,12 +50,14 @@
     margin-bottom: 15px;
     display: block;
 }
+
 .modal-R-text {
     margin-left: 1%;
     border: 1px solid #ccc;
     width: 94%;
     padding: 10px;
 }
+
 .modal-R-but {
     width: 200px;
     height: 60px;
@@ -60,14 +68,17 @@
     margin-top: 30px;
     margin-left: calc(50% - 100px);
 }
-.ThongBao{
+
+.ThongBao {
     color: red;
     margin-top: 10px;
 }
-.footer-R{
+
+.footer-R {
     display: flex;
     justify-content: center;
 }
+
 .lbTB-Login {
     font-size: 17px;
     color: red;
@@ -78,21 +89,26 @@
     display: flex;
     justify-content: center;
 }
+
 .contentDH {
     width: 500px;
 }
-.body-DH{
+
+.body-DH {
     width: 100%;
     min-height: 720px;
 }
-.tt-DH{
+
+.tt-DH {
     min-height: 200px;
     border: 1px solid #ccc;
 }
+
 .tt-GiaoHang {
     min-height: 410px;
     border: 1px solid #ccc;
 }
+
 .input-tt {
     width: 96%;
     margin-left: 2%;
@@ -101,6 +117,7 @@
     border-radius: 3px;
     border: 1px solid #ccc;
 }
+
 .chuthich {
     width: 90%;
     margin-left: 2%;
@@ -109,6 +126,7 @@
     background-color: #ECFBF0;
     padding: 5px 3%;
 }
+
 .btnDatHang {
     width: 100%;
     margin: 20px 0;
@@ -120,6 +138,7 @@
     font-weight: 500;
     background-color: #F87F12;
 }
+
 .back {
     position: fixed;
     top: 10px;
@@ -128,7 +147,8 @@
     color: blue;
     text-decoration: none;
 }
-.back-icon{
+
+.back-icon {
     margin: 0;
 }
 /*Trang Login quản trị*/
@@ -140,16 +160,19 @@
     width: 100%;
     height: 750px;
 }
-.header-Login{
+
+.header-Login {
     display: flex;
     justify-content: center;
 }
+
 .body-Login {
     background-color: #fff;
     width: 400px;
     height: 300px;
     border: 1px solid #ccc;
 }
+
 .Login-Label {
     margin-left: 1%;
     margin-top: 15px;
@@ -158,12 +181,14 @@
     margin-bottom: 15px;
     color: #B97A57;
 }
+
 .Login-Input {
     margin-left: 1%;
     border: 1px solid #B97A57;
     width: 90%;
     padding: 10px;
 }
+
 .Login-Button {
     background-color: #B97A57;
     width: 50%;
@@ -183,13 +208,15 @@
     display: flex;
     justify-content: space-between;
 }
-.Header-Ad-It1{
+
+.Header-Ad-It1 {
     height: 100%;
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .content-Ad {
     margin: 0;
     padding: 0;
@@ -197,6 +224,7 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 17px;
 }
+
 .nav-item {
     margin-left: 30px;
     font-size: 17px;
@@ -206,19 +234,22 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
     padding: 10px 5px;
 }
-.nav-item:hover{
-    background-color: #ccc;
-}
 
-#Body-Ad{
+    .nav-item:hover {
+        background-color: #ccc;
+    }
+
+#Body-Ad {
     height: 670px;
     display: flex;
 }
-.menu-Ad{
+
+.menu-Ad {
     width: 16%;
     height: 670px;
     background-color: #31373D;
 }
+
 .menu-It-Ad {
     margin-left: 10px;
     margin-top: 10px;
@@ -231,11 +262,12 @@
     font-weight: 500;
     text-decoration: none;
 }
-.menu-It-Ad:hover{
-    opacity: 0.8;
-    
-}
-.contairner-Ad{
+
+    .menu-It-Ad:hover {
+        opacity: 0.8;
+    }
+
+.contairner-Ad {
     height: 670px;
     width: 84%;
 }
@@ -247,12 +279,14 @@
     height: 670px;
     background: #EBEEF0;
 }
-.overview-HomePage-Ad{
+
+.overview-HomePage-Ad {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 140px;
 }
+
 .overview-It {
     display: flex;
     justify-content: center;
@@ -269,32 +303,37 @@
     margin: 0;
     padding-bottom: 20px;
 }
-.Num-Ov{
+
+.Num-Ov {
     font-weight: 600;
     margin: 0;
     padding: 0;
     font-size: 30px;
     color: white;
 }
-.Contairner-HomePage-Ad{
+
+.Contairner-HomePage-Ad {
     margin-top: 10px;
     width: 100%;
     display: flex;
     height: 500px;
 }
+
 .Contairner-HP-Ad-List {
     margin-left: 30px;
     width: 720px;
     height: 500px;
 }
+
 .Item {
     width: 100%;
     height: 200px;
     background: white;
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
 }
+
 .nav-Item-HP-Ad {
     height: 160px;
     width: 200px;
@@ -303,6 +342,7 @@
     color: black;
     text-decoration: none;
 }
+
 .Web-Infor {
     margin-left: 50px;
     width: 430px;
@@ -311,6 +351,7 @@
     color: #C0CAD6;
     font-size: 15px;
 }
+
 .Title-Web-Infor {
     font-weight: 600;
     font-size: 17px;
@@ -318,10 +359,10 @@
     border-bottom: 1px solid #ccc;
     color: #4478C1;
 }
+
 .Web-Infor p {
     margin: 10px 0 0 0;
     padding-left: 10px;
-    
 }
 
 /*HomePageAd*/
@@ -333,32 +374,38 @@
     color: saddlebrown;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
+
 .contairner-QL {
     width: 100%;
     height: 582px;
     display: flex;
 }
+
 .Input-Contairner-QL {
     width: 30%;
     height: 582px;
 }
-.Input-Contairner-QL-Item{
+
+.Input-Contairner-QL-Item {
     margin-top: 10px;
     margin-left: 10px;
     display: flex;
     align-items: center;
     font-size: 16px;
 }
-.lb-QL{
+
+.lb-QL {
     width: 100px;
     height: 30px;
     display: flex;
     align-items: center;
 }
+
 .ip-QLMT {
     width: 220px;
     height: 70px;
 }
+
 .lbTB-QL {
     margin-top: 20px;
     width: 100%;
@@ -368,13 +415,16 @@
     justify-content: center;
     color: red;
 }
-.ful-Ip{
+
+.ful-Ip {
     width: 200px;
 }
+
 .ip-QL {
     width: 220px;
     height: 30px;
 }
+
 .btnIp {
     width: 80px;
     height: 40px;
@@ -382,16 +432,19 @@
     align-items: center;
     justify-content: center;
 }
+
 .Tbl-Contairner-QL {
     width: 70%;
     height: 582px;
 }
-.row-tbl{
+
+.row-tbl {
     background: red;
     width: 100%;
     height: 40px;
     display: flex;
 }
+
 .type-collumm1 {
     width: 8%;
     height: 39px;
@@ -401,6 +454,7 @@
     align-items: center;
     font-size: 13px;
 }
+
 .type-collumm2 {
     width: 14%;
     height: 39px;
@@ -410,6 +464,7 @@
     align-items: center;
     font-size: 13px;
 }
+
 .type-collumm3 {
     width: 10%;
     height: 39px;
@@ -419,6 +474,7 @@
     align-items: center;
     font-size: 13px;
 }
+
 .type-collumm4 {
     width: 12%;
     height: 39px;
@@ -428,6 +484,7 @@
     align-items: center;
     font-size: 13px;
 }
+
 .type-collumm5 {
     width: 16%;
     height: 39px;
@@ -439,30 +496,35 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.newheight{
+
+.newheight {
     height: 49px;
 }
 /*QLspPage*/
 
 /*Quản Lý Đơn Hàng*/
-.Contairner-QLDH{
+.Contairner-QLDH {
     width: 100%;
     height: 580px;
     display: flex;
 }
+
 .Ip-contairner-QLDH {
     width: 40%;
     height: 580px;
 }
+
 .DL-contairner-QLDH {
     width: 60%;
     height: 580px;
 }
+
 .list-btn {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .btn {
     height: 30px;
     width: 100px;
@@ -470,10 +532,12 @@
     justify-content: space-around;
     align-items: center;
 }
-.row-tbl-DL{
+
+.row-tbl-DL {
     width: 754px;
     display: flex;
 }
+
 .col-tbl {
     height: 39px;
     width: 20%;
@@ -482,12 +546,14 @@
     justify-content: center;
     align-items: center;
 }
+
 .CTDH-List {
     border: 1px solid #ccc;
     width: 100%;
     height: 350px;
 }
-.CTDH{
+
+.CTDH {
     width: 400px;
     margin-left: 50px;
     margin-top: 10px;
@@ -495,24 +561,28 @@
     display: flex;
     align-items: center;
 }
-.TongTien{
+
+.TongTien {
     margin-top: 10px;
     display: flex;
     justify-content: center;
     color: red;
     font-size: 20px;
 }
-.TTDT-content{
+
+.TTDT-content {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-.lbTTDH{
+
+.lbTTDH {
     display: flex;
     align-items: center;
     width: 250px;
     height: 30px;
 }
+
 .btnDH {
     margin-top: 10px;
     display: flex;
@@ -525,6 +595,7 @@
     border: none;
     background: green;
 }
+
 .lbTB {
     display: flex;
     align-items: center;
@@ -537,10 +608,11 @@
 /*Quản Lý Đơn Hàng*/
 
 /*Quản Lý Thành Viên*/
-.row-tblTV{
+.row-tblTV {
     display: flex;
     align-items: center;
 }
+
 .col-tblTV {
     display: flex;
     justify-content: center;
@@ -551,47 +623,55 @@
     border: 1px solid #ccc;
     width: 205px;
 }
-.bang{
+
+.bang {
     width: 100%;
 }
 /*Quản Lý Thành Viên*/
 
 /*Thông Tin Admin*/
-.anhbia{
+.anhbia {
     width: 787px;
     height: 350px;
     margin-left: calc( 50% - 393px );
     background: red;
 }
-.ttAdmin{
+
+.ttAdmin {
     margin-top: -30px;
     display: flex;
     align-items: center;
 }
+
 .ava-Ad {
     width: 170px;
     margin-left: calc( 50% - 393px );
     border-radius: 50%;
     border: 5px solid white;
 }
-.ttAdmin-Content{
+
+.ttAdmin-Content {
     margin-left: 10px;
 }
+
 .lbTen {
     font-size: 31px;
     font-weight: 700;
 }
+
 .username {
     color: #65676B;
     margin: 10px 0 0 0;
     font-size: 20px;
     font-weight: 600;
 }
+
 .content-Web {
     width: 787px;
     height: 170px;
     margin-left: calc( 50% - 393px );
 }
+
 .tt-web {
     color: #65676B;
     font-size: 20px;
@@ -612,7 +692,8 @@
     height: 580px;
     border: 1px solid #ccc;
 }
-.khachHang{
+
+.khachHang {
     margin-top: 5px;
     margin-left: 10%;
     height: 50px;
@@ -620,7 +701,8 @@
     display: flex;
     align-items: center;
 }
-.lbtnKH{
+
+.lbtnKH {
     margin-left: 10px;
     color: black;
     text-decoration: none;
@@ -630,32 +712,96 @@
     width: 50%;
     height: 580px;
 }
+
 .MessBox {
     width: 100%;
     height: 540px;
     overflow-y: scroll; /* Show vertical scrollbar */
     background: #ccc;
 }
-.MessBox::-webkit-scrollbar {
-  width: 10px;
+
+    .MessBox::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .MessBox::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+
+    .MessBox::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 10px;
+    }
+
+        .MessBox::-webkit-scrollbar-thumb:hover {
+            background: #b30000;
+        }
+
+.Mess-Control {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.MessBox::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+.False {
+    width: 612px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
-.MessBox::-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 10px;
+
+.True {
+    width: 612px;
+    height: 44px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
-.MessBox::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+
+.FalseMess {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color: black;
+    font-family: Comic Sans MS;
+    border-radius: 19px;
 }
-.txtMessAd{
+
+.TrueMess {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    background-color: #0084FF;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    color: white;
+    font-family: Comic Sans MS;
+    border-radius: 19px;
+}
+
+.txtMessAd {
     height: 34px;
     width: 90%;
 }
-.btnSendAd{
+
+.btnSendAd {
     height: 40px;
     width: 8%;
 }

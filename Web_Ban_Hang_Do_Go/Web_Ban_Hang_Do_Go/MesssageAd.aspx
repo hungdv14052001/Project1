@@ -17,18 +17,24 @@
                             <div style="border: 1px solid #ccc; font-size: 30px; border-radius: 50%; display: flex; justify-content: center;align-items:center; width: 40px; height: 40px; color: #E25041;">
                                 <i class="fas fa-user-tie" ></i>
                             </div>
-                            <asp:LinkButton ID="lbtnKH" CssClass="lbtnKH" runat="server" CommandArgument='<%# Eval("MaTV") %>'><%# Eval("TenTV") %></asp:LinkButton>
+                            <asp:LinkButton ID="lbtnKH" CssClass="lbtnKH" runat="server" CommandArgument='<%# Eval("MaTV") %>' OnClick="lbtnKH_Click"><%# Eval("TenTV") %></asp:LinkButton>
                         </div>
                     </ItemTemplate>
                 </asp:DataList>
             </div>
             <div class="Con-Mess">
                 <div class="MessBox">
-
+                    <asp:DataList ID="DLMess" runat="server">
+                        <ItemTemplate>
+                            <div class='<%# Eval("isAd") %>'>
+                                <p class='<%# Eval("isAd")+"Mess" %>'><%# Eval("MessContent") %></p>
+                            </div>
+                        </ItemTemplate>
+                    </asp:DataList>
                 </div>
                 <div class="Mess-Control">
-                    <asp:TextBox ID="txtMess" CssClass="txtMessAd" runat="server"></asp:TextBox>
-                    <asp:Button ID="Button1" CssClass="btnSendAd" runat="server" Text="Gửi" />
+                    <asp:TextBox ID="txtMess" CssClass="txtMessAd" runat="server" autocomplete="off" ></asp:TextBox>
+                    <asp:Button ID="btnSend" CssClass="btnSendAd" runat="server" Text="Gửi" OnClick="btnSend_Click" />
                 </div>
             </div>
         </div>

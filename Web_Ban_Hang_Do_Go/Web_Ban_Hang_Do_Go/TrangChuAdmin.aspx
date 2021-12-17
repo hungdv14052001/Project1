@@ -36,21 +36,21 @@
         <div class="Contairner-HomePage-Ad">
             <div class="Contairner-HP-Ad-List">
                 <div class="Item">
-                    <a href="#" class="nav-Item-HP-Ad">
+                    <a href="QLspPage.aspx" class="nav-Item-HP-Ad">
                         <img src="./img/product-management.png" width="100" style="margin-left: calc( 50% - 50px) ;"/>
                         <p style="font-size: 20px; font-weight: 600; margin-left: 10px;">Quản lý Sản Phẩm</p>
                     </a>
-                    <a href="#" class="nav-Item-HP-Ad">
+                    <a href="QLDH.aspx" class="nav-Item-HP-Ad">
                         <img src="./img/Oder.png" width="100" style="margin-left: calc( 50% - 50px) ;"/>
                         <p style="font-size: 20px; font-weight: 600; margin-left: 10px;">Quản lý Đơn Hàng</p>
                     </a>
                 </div>
                 <div class="Item">
-                    <a href="#" class="nav-Item-HP-Ad">
+                    <a href="QLTV.aspx" class="nav-Item-HP-Ad">
                         <img src="./img/employee.png" width="100" style="margin-left: calc( 50% - 50px) ;"/>
                         <p style="font-size: 20px; font-weight: 600; margin-left: 10px;">Quản lý Thành Viên</p>
                     </a>
-                    <a href="#" class="nav-Item-HP-Ad">
+                    <a href="TTAdmin.aspx" class="nav-Item-HP-Ad">
                         <img src="./img/Admin-If.png" width="100" style="margin-left: calc( 50% - 50px) ;"/>
                         <p style="font-size: 20px; font-weight: 600; margin-left: 10px;">Thông Tin Quản Trị</p>
                     </a>

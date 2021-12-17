@@ -69,9 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\Main.css" />
-    <Content Include="css\Other.css" />
     <Content Include="css\RPS.css" />
     <Content Include="css\SanPham.css" />
+    <Content Include="css\Other1.css" />
     <Content Include="DatHang.aspx" />
     <Content Include="Detialsp.aspx" />
     <Content Include="fonts\fontawesome-free-5.15.4-web\attribution.js" />

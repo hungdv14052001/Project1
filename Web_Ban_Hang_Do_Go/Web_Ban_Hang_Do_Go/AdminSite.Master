@@ -5,8 +5,8 @@
 <html>
 <head runat="server">
     <title>Trang Quản Trị</title>
-    <link href="css/Other.css" rel="stylesheet" />
     <link href="fonts/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet" />
+    <link href="css/Other1.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -47,7 +47,7 @@
                     QUẢN LÝ THÀNH VIÊN
                 </a>
                 
-                <a href="QLTV.aspx" class="menu-It-Ad">
+                <a href="MesssageAd.aspx" class="menu-It-Ad">
                     <i class="fas fa-comment-dots" style="margin-right: 10px;"></i>
                     TƯ VẤN KHÁC HÀNG
                 </a>
